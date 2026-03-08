@@ -5,8 +5,9 @@ import { ButtonIcon } from "@/components/ButtonIcon";
 import { Header } from "@/components/Header";
 import { Title } from "@/components/Title";
 import type { BottomRoutesProps } from "@/routes/ButtonRoutes";
+import type { DrawerRoutesProps } from "@/routes/DrawerRoutes";
 
-export function Product({ navigation, route }: BottomRoutesProps<"product">) {
+export function Product({ navigation, route }: DrawerRoutesProps<"product">) {
   const { params } = useRoute();
   return (
     <View style={{ flex: 1, padding: 32, paddingTop: 54 }}>
